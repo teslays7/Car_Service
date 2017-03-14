@@ -1,0 +1,214 @@
+p{
+  font-family: sans-serif;;
+  font-style: normal;
+  font-weight: lighter;;
+
+}
+.p2{
+  background-color: white;
+  height: 60px;
+  font-size: 30px;
+  margin-bottom: 0px;
+  opacity: 0.6;
+}
+.p1{
+  font-size: 20px;
+  opacity: 0.7;
+}
+.topics{
+  height:220px;
+  width: auto;
+  margin-bottom: 0px;
+}
+.ul1 li{
+  opacity: 0.7;
+  list-style-type: none;
+  margin-left:30px;
+  width:  25%;
+  margin-right: 10px;
+  float: left;
+  align-items: center;
+}
+.icon{
+  margin-bottom:10px;
+  margin-right: 20px;
+  height: 70px;
+  width: 70px;
+}
+.container {
+  position: relative;
+  width: 330px;
+  height: 250px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+.img1 {
+  width: 330px;
+  height: 250px;
+  left: 0;
+}
+
+.title {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  position: absolute;
+  width: 330px;
+  left: 0;
+  top: 120px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+.mission1{
+  font-size: 25px;
+}
+.Mission{
+  display: block;
+  margin-bottom: 50px;
+}
+.mission20{
+  width: 60%;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+}
+.hologram{
+  margin-top: 40px;
+  height: 150px;
+  display: flex
+  margin-bottom: 40px;
+}
+.mission{
+  margin-right: 70px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  width: 40%;
+  margin-left: 60px;
+}
+.mission2{
+  font-size: 17px;
+  line-height: 30px;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+.mission3{
+  font-size: 17px;
+  line-height: 24px;
+  opacity:0.9;
+  margin-bottom: 15px;
+}
+.mission21{
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+.container:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 330px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0  ;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 1px white;
+  z-index: 1;
+}
+.button :hover {
+  background-color: #1976D2;
+  border: none;
+}
+.container:hover .button {
+  opacity: 1;
+}
+.outercontainer{
+  display: inline-flex; ;
+}
+.purchase{
+  align-content: center;
+  display:flex;
+  height: 130px;
+  margin-top: 60px;
+  margin-left: 170px;
+  margin-right: 50px;
+}
+.text1{
+  font-size: 23px;
+  font-family: sans-serif;;
+  font-style: normal;
+  font-weight: lighter;
+  padding: 12px 48px;
+  text-align: center;
+}
+.purch{
+  width: 200px;
+  font-size: 15px;
+  height: 55px;
+  color: black;
+  background-color: none;
+}
+.purch:hover{
+  background-color:#1976D2;
+  color: white;
+}
+.contacts{
+  background-color: black;
+  height: 100px;
+  display:flex;
+}
+.add2{
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.email1{
+  font-size:18px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: center;
+}
+.follow{
+  font-size:18px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 80px;
+  text-align: center;
+  margin-right: 30px;
+}
+.add, .mob, .RA{
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+}

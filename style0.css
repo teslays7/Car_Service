@@ -1,0 +1,625 @@
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+max-width:92%;
+position: relative;
+left:50px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor:pointer;
+height: 13px;
+width: 13px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+
+
+
+.p27{
+
+  height: 60px;
+  font-size: 30px;
+  margin-bottom: 0px;
+  opacity: 1;
+}
+
+.p1_yash{
+  font-size: 20px;
+  opacity: 0.85;
+}
+
+#HELP{
+  display: inline-block;
+border-radius: 4px;
+background-color: #1976D2;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 18px;
+padding: 20px;
+width: 200px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+#HELP span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+#HELP span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+#HELP:hover span {
+padding-right: 25px;
+}
+
+#HELP:hover span:after {
+opacity: 1;
+right: 0;
+}
+#text_inside_image_heading{
+  /*padding-top: 250px;*/
+  color: white;
+  font-weight: bold;
+  font-size:300%;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#text_inside_image{
+  /*padding-top: 250px;*/
+  color: white;
+  font-size:150%;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.parallax {
+/* The image used already mentioned in the division parallax*/
+background-image: url("pexels-photo (1).jpg");
+/* Set a specific height */
+min-height: 570px;
+min-width: 100%;
+visibility: inherit;
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 1;
+}
+.menu {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #f1f1f1;
+}
+#overview_list{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+li {
+float: right;
+}
+
+#carrepair{
+display: inline-block;
+color: #1976D2;
+text-align: center;
+padding: 7px 10px;
+font-weight: bold;
+font-size: 235%;
+}
+.List_item_overview{
+padding-left: 50px;
+padding-right:63px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height:65%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#mechanic_on_the_way{
+  font-weight: bold;
+  font-size: 190%;
+  font-family: sans-serif;
+  color: #1976D2;
+}
+#tow_truck{
+    width:100px;
+    height:100px;
+    background:white;
+    transition:2s;
+    -webkit-transition:2s;
+    -moz-transition:2s;
+    position:absolute;
+    right:calc(90% - 110px);
+}
+#tow_truck:hover {
+  right:230px;
+}
+
+li a, .dropbtn {
+display: inline-block;
+color: #1976D2;
+text-align: center;
+padding: 18px 16px;
+text-decoration: none;
+font-size: 100%;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+background-color: white;
+}
+a:link{
+  text-decoration: none;
+}
+li.dropdown {
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+font-size: 90%;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.Heading_in_overview{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 100%;
+font-weight: bold;
+}
+.Text_in_overview{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 90%;
+opacity: 0.85;
+}
+#logo{
+padding-top: 100px;
+}
+#applicationform{
+border-radius: 45%;
+font-size: 12px;
+background-color: #1976D2;
+padding: 22px 29px;
+}
+.Form{
+padding-top: 60px;
+padding-bottom: 50px;
+font-family: Arial, Helvetica, sans-serif;
+background-color:  #f1f1f1;
+font-size: 160%;
+}
+.page{
+padding-top: 70px;
+}
+
+#cars_list{
+width: 100%;
+height: 610px;
+background-color: #f1f1f1;
+font-family: Arial, Helvetica, sans-serif;
+}
+#list_of_cars{
+position: relative;
+left:50px;
+top:0px;
+}
+#Name_of_cars{
+column-width: 100px;
+position: relative;
+left:50px;
+top:40px;
+font-family: cursive;
+opacity: 0.9;
+}
+#View_more_cars_name{
+padding-left: 80px;
+}
+
+p{
+  font-family: sans-serif;;
+  font-style: normal;
+  font-weight: lighter;;
+
+}
+.p2{
+  background-color: white;
+  height: 60px;
+  font-size: 30px;
+  margin-bottom: 0px;
+  opacity: 0.6;
+}
+.p1{
+  font-size: 20px;
+  opacity: 0.7;
+}
+.topics{
+  height:220px;
+  width: auto;
+  margin-bottom: 0px;
+  padding-left: 10%;
+}
+.ul1 li{
+  opacity: 0.7;
+  list-style-type: none;
+  margin-left:30px;
+  width:  25%;
+  margin-right: 10px;
+  float: left;
+  align-items: center;
+
+}
+.icon{
+  margin-bottom:10px;
+  margin-right: 20px;
+  height: 70px;
+  width: 70px;
+}
+.container {
+  position: relative;
+  width: 330px;
+  height: 250px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+.img1 {
+  width: 330px;
+  height: 250px;
+  left: 0;
+}
+
+.title {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  position: absolute;
+  width: 330px;
+  left: 0;
+  top: 120px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+.mission1{
+  font-size: 25px;
+  font-family: sans-serif;;
+  font-style: normal;
+  font-weight: lighter;
+}
+.Mission{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.mission20{
+  width: 60%;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  float: left;
+  padding-left: 0px;
+}
+.apptop{
+  display: flex;
+margin-right: 40px;
+}
+.div2{
+  background-color: lightgrey;
+  margin-left: 106px;
+  height: 50px;
+  text-align:left;
+  line-height: 50px;
+  width: 488px;
+  margin-right: 40px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+}
+.div1{
+  background-color: lightgrey;
+  margin-left: 108px;
+  height: 50px;
+  text-align:left;
+  line-height: 50px;
+  width: 300px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.inputs{
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  margin-top: 30px;
+}
+
+.inputs2{
+  font-size: 18px;
+  opacity: 0.7;margin-left: 106px;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+.bottomimg{
+  margin-top: 40px;
+  height: 150px;
+  display: flex;
+  margin-bottom: 40px;
+}
+.mission{
+  margin-right: 70px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  width: 40%;
+  margin-left: 60px;
+}
+.mission2{
+  font-size: 17px;
+  line-height: 30px;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+.mission3{
+  font-size: 17px;
+  line-height: 24px;
+  opacity:0.9;
+  margin-bottom: 22.5px;
+}
+.mission21{
+  font-size: 17px;
+  line-height: 30px;
+  opacity: 0.9;
+  padding-right: 40px;
+  float:left;
+}
+.container:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 330px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0  ;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 1px white;
+  z-index: 1;
+}
+.button :hover {
+  background-color: #1976D2;
+  border: none;
+}
+.container:hover .button {
+  opacity: 1;
+}
+.outercontainer{
+  display: inline-flex; ;
+}
+.purchase{
+  align-content: center;
+  display:flex;
+  height: 130px;
+  margin-top: 60px;
+  margin-left: 170px;
+  margin-right: 50px;
+}
+.text1{
+  font-size: 23px;
+  font-family: sans-serif;;
+  font-style: normal;
+  font-weight: lighter;
+  padding: 12px 48px;
+  text-align: center;
+}
+.purch{
+  width: 200px;
+  font-size: 15px;
+  height: 55px;
+  color: black;
+  background-color: none;
+}
+.purch:hover{
+  background-color:#1976D2;
+  color: white;
+}
+.contacts{
+  background-color: black;
+  height: 100px;
+  display:flex;
+}
+.add2{
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.email1{
+  font-size:18px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: center;
+}
+.follow{
+  font-size:18px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 80px;
+  text-align: center;
+  margin-right: 30px;
+}
+.add, .mob, .RA{
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+}
